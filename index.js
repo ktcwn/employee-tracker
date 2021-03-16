@@ -76,3 +76,13 @@ const startPrompt = () => {
             console.log(err);
         });
 }
+
+// view directory functions
+const viewEmployees = () => {
+    connection.query("SELECT * FROM employee",
+        function (err, res) {
+            if (err) throw err;
+            console.table(res);
+            startPrompt();
+        })
+}
