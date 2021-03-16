@@ -104,3 +104,49 @@ const viewDepartments = () => {
             startPrompt();
         })
 }
+
+// add employee prompt function
+const addEmployee = () => {
+    inquirer.prompt([
+        {
+            name: "firstName",
+            type: "input",
+            message: "What is the employee's first name?",
+            validate: validInput
+        },
+        {
+            name: "lastName",
+            type: "input",
+            message: "What is the employee's last name?",
+            validate: validInput
+        },
+        {
+            name: "selectRole",
+            type: "rawlist",
+            message: "What is the employee's role?",
+            choices: selectRole()
+        },
+        {
+            name: "selectManager",
+            type: "rawlist",
+            message: "What is the employee's manager name?",
+            choices: selectManager()
+        }
+    ])
+        .then(function (answer) {
+            const roleID = selectRole().indexOf(answer.selectRole) + 1;
+            const managerID = selectManager().indexOf(answer.selectManager) + 1;
+            connection.query("INSERT INTO employee SET ?",
+                {
+                    first_name: answer.firstName,
+                    last_name: answer.lastName,
+                    role_id: roleID,
+                    manager_id: managerID
+                },
+                function (err) {
+                    if (err) throw err
+                    console.table(answer);
+                    startPrompt();
+                })
+        })
+};
