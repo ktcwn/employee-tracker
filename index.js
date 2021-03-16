@@ -95,3 +95,12 @@ const viewRoles = () => {
             startPrompt();
         })
 }
+
+const viewDepartments = () => {
+    connection.query("SELECT * FROM department",
+        function (err, res) {
+            if (err) throw err;
+            console.table(res);
+            startPrompt();
+        })
+}
