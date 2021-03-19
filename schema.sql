@@ -33,7 +33,7 @@ CREATE TABLE employee (
 );
 
 ----- INSERT DATA INTO TABLES -----
-INSERT INTO department (dept_name)
+INSERT INTO department (name_dept)
 VALUES 
 ("Manager"), 
 ("Design"), 
@@ -41,9 +41,9 @@ VALUES
 
 INSERT INTO roles (title, salary, department_id)
 VALUES 
-("Project Manager", 90000.00, 1),
-("Design Manager", 80000.00, 2),
-("Engineering Manager", 70000.00, 3),
+("Project Manager", 90000.00, 5),
+("Design Manager", 80000.00, 5),
+("Engineering Manager", 70000.00, 5),
 ("UI/UX Designer", 70000.00, 1),
 ("Front-End Engineer", 90000.00, 2),
 ("Back-End Engineer", 45000.00, 3);
@@ -52,11 +52,11 @@ VALUES
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id, is_manager)
 VALUES 
-("Daniel", "Molaison", 1, NULL , TRUE),
-("Kuku", "Pham", 2, NULL , TRUE),
-("Katie", "Cowan", 3, NULL , TRUE),
-("Ashley","James", 6, 1, FALSE),
-("Nelly","Cavazos", 7, 2, FALSE),
-("Elijah","Pitts", 8, 3, FALSE);
+("Daniel", "Molaison", 19, 1 , TRUE),
+("Kuku", "Pham", 20, 2 , TRUE),
+("Katie", "Cowan", 22, 3 , TRUE),
+("Ashley","James", 25, NULL, FALSE),
+("Nelly","Cavazos", 26, NULL, FALSE),
+("Elijah","Pitts", 27, NULL, FALSE);
 
 SELECT * FROM employee WHERE is_manager = TRUE;

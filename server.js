@@ -174,6 +174,7 @@ const addRole = () => {
         },
     ])
         .then(function (answer) {
+            console.log(answer);
             connection.query("INSERT INTO roles SET ?",
                 {
                     title: answer.title,
@@ -255,6 +256,7 @@ const selectRole = () => {
             roleList.push(res[i].title);
         }
     })
+    console.log(roleList);
     return roleList;
 };
 
@@ -282,7 +284,7 @@ const selectEmployee = () => {
 
 
 const validInput = (input, type) => {
-    if (input.length < 1) {
+    if (input.length < 0) {
         return console.log(`Please provide a valid input.`);
     }
     return true;
