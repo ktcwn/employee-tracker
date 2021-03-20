@@ -12,23 +12,23 @@
 
 ## Installation
 
-> First run "npm install" to install all other dependencies needed
+> First run `npm install` to install all other dependencies needed
 
 ### [Node](https://nodejs.org/en/)
 
-> Install using "npm i node"
+> Install using `npm i node`
 
 ### [Inquirer] (https://www.npmjs.com/package/inquirer)
 
-> Install using "npm i inquirer"
+> Install using `npm i inquirer`
 
 ### [mySQL] (https://www.npmjs.com/package/mysql)
 
-> Install using "npm i mysql"
+> Install using `npm i mysql`
 
 ### [Console.table] (https://www.npmjs.com/package/console.table)
 
-> Install using "npm i console.table"
+> Install using `npm i console.table`
 
 ## Test Commands
 
