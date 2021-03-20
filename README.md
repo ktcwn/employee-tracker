@@ -18,15 +18,15 @@
 
 > Install using "npm i node"
 
-### [Inquirer]
+### [Inquirer] (https://www.npmjs.com/package/inquirer)
 
 > Install using "npm i inquirer"
 
-### [mySQL]
+### [mySQL] (https://www.npmjs.com/package/mysql)
 
 > Install using "npm i mysql"
 
-### [Console.table]
+### [Console.table] (https://www.npmjs.com/package/console.table)
 
 > Install using "npm i console.table"
 
