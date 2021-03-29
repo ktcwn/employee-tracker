@@ -14,19 +14,19 @@
 
 > First run `npm install` to install all other dependencies needed
 
-### ![Node](https://nodejs.org/en/)
+### [Node](https://nodejs.org/en/)
 
 > Install using `npm i node`
 
-### ![Inquirer] (https://www.npmjs.com/package/inquirer)
+### [Inquirer] (https://www.npmjs.com/package/inquirer)
 
 > Install using `npm i inquirer`
 
-### ![mySQL] (https://www.npmjs.com/package/mysql)
+### [mySQL] (https://www.npmjs.com/package/mysql)
 
 > Install using `npm i mysql`
 
-### ![Console.table] (https://www.npmjs.com/package/console.table)
+### [Console.table] (https://www.npmjs.com/package/console.table)
 
 > Install using `npm i console.table`
 
