@@ -27,11 +27,11 @@ CREATE TABLE employee (
     role_id INT NOT NULL,
     manager_id INT,
     is_manager BOOLEAN DEFAULT FALSE,
-    PRIMARY KEY (id),
+    PRIMARY KEY (id)
 );
 
 ----- INSERT DATA INTO TABLES -----
-INSERT INTO department (name_dept)
+INSERT INTO department (dept_name)
 VALUES 
 ("Manager"), 
 ("Design"), 
@@ -39,9 +39,9 @@ VALUES
 
 INSERT INTO roles (title, salary, department_id)
 VALUES 
-("Project Manager", 90000.00, 5),
-("Design Manager", 80000.00, 5),
-("Engineering Manager", 70000.00, 5),
+("Project Manager", 90000.00, 1),
+("Design Manager", 80000.00, 2),
+("Engineering Manager", 70000.00, 3),
 ("UI/UX Designer", 70000.00, 1),
 ("Front-End Engineer", 90000.00, 2),
 ("Back-End Engineer", 45000.00, 3);

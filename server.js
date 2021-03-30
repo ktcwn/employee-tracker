@@ -202,7 +202,7 @@ const addDepartment = () => {
         .then(function (answer) {
             connection.query("INSERT INTO department SET ?",
                 {
-                    name_dept: answer.deptName
+                    dept_name: answer.deptName
                 },
                 function (err) {
                     if (err) throw err
